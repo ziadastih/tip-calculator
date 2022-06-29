@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+/* =========global for browser support========== */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 :root {
   --Strongcyan: hsl(172, 67%, 45%);
@@ -145,6 +151,8 @@ body {
 }
 #number-of-people {
   cursor: pointer;
+
+  outline-color: transparent;
   width: 80vw;
   padding: 8px;
 
@@ -255,7 +263,7 @@ body {
   color: var(--Verydarkcyan);
 }
 /* ===========800px+ ======= */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 830px) {
   .main-container {
     flex-direction: row;
     width: 80vw;
@@ -290,9 +298,7 @@ body {
 }
 
 /* ===========js class ==========*/
-.show-alert {
-  opacity: 1;
-}
+
 .grid-selected {
   background-color: var(--Strongcyan);
 

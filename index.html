@@ -15,7 +15,7 @@
         <div class="bill-container">
           <p>bill</p>
 
-          <input type="text" id="total-amount" placeholder="0" />
+          <input type="number" id="total-amount" placeholder="0" min="0" />
           <img src="./images/icon-dollar.svg" alt="" />
         </div>
         <!-- tip % container -->
@@ -28,18 +28,19 @@
             <article class="grid">25%</article>
             <article class="grid">50%</article>
             <input
-              type="text"
+              type="number"
               placeholder="Custom"
               class="grid"
               id="grid-input"
+              min="0"
             />
           </div>
         </div>
         <div class="number-of-people">
           <p>Number of People</p>
-          <p class="alert">can't be zero!</p>
+          <p class="alert">put a valid value!</p>
 
-          <input type="text" placeholder="0" id="number-of-people" />
+          <input type="number" placeholder="0" id="number-of-people" min="0" />
 
           <img src="./images/icon-person.svg" alt="" />
         </div>
