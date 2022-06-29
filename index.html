@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <title>tip | | calculator</title>
+  </head>
+  <body>
+    <img src="./images/logo.svg" class="logo" alt="" />
+    <section class="main-container">
+      <div class="function-container">
+        <div class="bill-container">
+          <p>bill</p>
+
+          <input type="text" id="total-amount" placeholder="0" />
+          <img src="./images/icon-dollar.svg" alt="" />
+        </div>
+        <!-- tip % container -->
+        <div class="tip-percentage">
+          <p>Select tip %</p>
+          <div class="tip-grid">
+            <article class="grid">5%</article>
+            <article class="grid">10%</article>
+            <article class="grid">15%</article>
+            <article class="grid">25%</article>
+            <article class="grid">50%</article>
+            <input
+              type="text"
+              placeholder="Custom"
+              class="grid"
+              id="grid-input"
+            />
+          </div>
+        </div>
+        <div class="number-of-people">
+          <p>Number of People</p>
+          <p class="alert">can't be zero!</p>
+
+          <input type="text" placeholder="0" id="number-of-people" />
+
+          <img src="./images/icon-person.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="end-result-container">
+        <div class="tip-person">
+          <p class="tip-text">tip amount <br /><span>/ person</span></p>
+          <p class="tip-value">$0.00</p>
+        </div>
+
+        <div class="total-person">
+          <p class="total-text">total amount <br /><span>/ person</span></p>
+          <p class="total-value">$0.00</p>
+        </div>
+        <button class="reset-btn">reset</button>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
