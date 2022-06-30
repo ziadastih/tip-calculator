@@ -76,7 +76,7 @@ body {
   cursor: pointer;
   width: 80vw;
   padding: 8px;
-
+  outline-color: var(--Strongcyan);
   text-align: end;
   border: none;
   background-color: var(--Verylightgrayishcyan);
@@ -127,7 +127,7 @@ body {
   text-align: center;
   text-align: end;
   padding-right: 10px;
-
+  outline-color: var(--Strongcyan);
   color: var(--Verydarkcyan);
 }
 #grid-input::placeholder {
@@ -152,7 +152,7 @@ body {
 #number-of-people {
   cursor: pointer;
 
-  outline-color: transparent;
+  outline-color: var(--Strongcyan);
   width: 80vw;
   padding: 8px;
 
@@ -172,6 +172,7 @@ body {
 
 .number-of-people .alert {
   position: absolute;
+  font-size: 12px;
   opacity: 0;
   top: 0;
   right: 0;
