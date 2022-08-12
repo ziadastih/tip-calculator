@@ -9,6 +9,7 @@ const resetBtn = document.querySelector(".reset-btn");
 
 const mainContainer = document.querySelector(".main-container");
 
+// ===========grid click ,give class and activate calc function if all is true =======
 grids.forEach(function (grid) {
   grid.addEventListener("click", function () {
     grids.forEach(function (item) {
@@ -22,6 +23,7 @@ grids.forEach(function (grid) {
   });
 });
 
+// ================main container on any input change we want to activate the calc function also if the values are true we want to give reset btn in responsive class
 mainContainer.addEventListener("input", function () {
   // ==========reset Btn activation============
   if (totalBill.value > 0 || percentage.value > 0 || peopleNum.value > 0) {
@@ -30,7 +32,6 @@ mainContainer.addEventListener("input", function () {
     resetBtn.classList.remove("reset-btn-active");
   }
 
-  // =======main calc function=============
   calcFunction();
 });
 // ==========TOTAL BILL ADJUSTEMENT FOR PROBABLE MISTAKE ======
@@ -81,6 +82,8 @@ function alert() {
     peopleNum.style.outlineColor = "var(--Strongcyan)";
   }, 3000);
 }
+
+// ==============function to block total input in case value in not a number
 function blockTotalInput() {
   if (totalBill.value == 0) {
     totalBill.value = "";
